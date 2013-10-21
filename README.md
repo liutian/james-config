@@ -14,5 +14,6 @@ james-config
   database.username=root  
   database.password=slothdb123  
   vendorAdapter.database=MYSQL  
-  注意：需要将对于的数据库驱动架包拷贝到conf/lib/下  
+  注意：需要将对于的数据库驱动架包拷贝到conf/lib/下，修改james-database-template.properties文件为james-database.properties使数据库配置生效  
+  
     
