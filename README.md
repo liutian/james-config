@@ -15,8 +15,8 @@ james-config
   database.password=slothdb123  
   vendorAdapter.database=MYSQL  
   注意：需要将对应的数据库驱动包拷贝到conf/lib/下，运行bin/run.bat将会自动建立起数据库表结构 
-### domainlist-template.conf 邮件服务器域名配置
-    `<domainlist class=org.apache.james.domainlist.xml.XMLDomainList>  `  
+### domainlist-template.conf 邮件服务器域名配置  
+    `<domainlist class=org.apache.james.domainlist.xml.XMLDomainList> `  
    `<domainnames> `   
       ` <domainname>findest.com.cn</domainname>  `  
    `</domainnames>  `  
