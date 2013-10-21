@@ -3,10 +3,11 @@ james-config
 ## 系统依赖环境：
 1.jdk1.5或1.6,但不能是1.7否则读取xml文件时会报错  
 2.必须用root用户进行操作  
-3.必须按照libc6软件包 ，不同linux系统下该软件包名字不同，需要特别注意  
-## 安装配置
-1.下载并解压架包  
-2.首先配置文件夹中的配置文件：  
+3.linux系统必须安装libc6软件包不同linux系统下该软件包名字不同，需要上网查询对于的安装包的名称    
+## 安装与配置
+1.下载并解压james软件包  
+2.james内置了一套配置，如果想自定义配置，则使用conf/中james已经提供的配置文件模板进行自定义，最后记得将XXX-temple.properties文件名改为XXX.properties  
+3.自定义配置：  
 ### james-database-template  数据库配置,已mysql为例  
     
   database.driverClassName=com.mysql.jdbc.Driver  
