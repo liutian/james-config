@@ -9,13 +9,22 @@ james-config
 2.james内置了一套配置，如果想自定义配置，则使用conf/中james已经提供的配置文件模板进行自定义，最后记得将XXX-temple.properties文件名改为XXX.properties  
 3.自定义配置：  
 ### james-database-template  数据库配置,已mysql为例  
-    
   database.driverClassName=com.mysql.jdbc.Driver  
   database.url=jdbc:mysql://10.253.53.22:3306/mailserver?zeroDateTimeBehavior=convertToNull&autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8  
   database.username=root  
   database.password=slothdb123  
   vendorAdapter.database=MYSQL  
-  注意：需要将对应的数据库驱动包拷贝到conf/lib/下，运行bin/run.bat将会自动建立起数据库表结构  
+  注意：需要将对应的数据库驱动包拷贝到conf/lib/下，运行bin/run.bat将会自动建立起数据库表结构 
+### domainlist-template.conf 邮件服务器域名配置
+    <domainlist class="org.apache.james.domainlist.xml.XMLDomainList">  
+   <domainnames>  
+       <domainname>findest.com.cn</domainname>  
+   </domainnames>  
+   <autodetect>false</autodetect>  
+   <autodetectIP>false</autodetectIP>  
+   <defaultDomain>findest.com.cn</defaultDomain>  
+</domainlist>  
+
   
   
     
