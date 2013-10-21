@@ -24,6 +24,7 @@ james-config
 `<autodetectIP>false</autodetectIP>  `  
 `<defaultDomain>findest.com.cn</defaultDomain> `   
 `</domainlist>`  
+注释掉`<domainlist class="org.apache.james.domainlist.jpa.JPADomainList"> ... </domainlist>`  
 ### dnsservice-template.conf 配置邮件服务器dns
 `<servers>`  
 `<server>61.177.7.1</server>`  
