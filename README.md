@@ -31,6 +31,8 @@ james-config
 `<server>61.177.7.1</server>`  
 `<server>...</server>`  
 `</servers>`  
+### wrapper.conf
+添加`wrapper.java.classpath.120=../conf/lib/mysql-connector-java-5.0.8-bin.jar`,记得将数据库驱动拷贝到conf/lib下
 
   
   
