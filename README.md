@@ -37,7 +37,7 @@ james-config
 `<usersrepository name="LocalUsers" class="org.apache.james.user.jpa.JPAUsersRepository">`
     `<algorithm>MD5</algorithm>`
     `<enableVirtualHosting>false</enableVirtualHosting>`
-`</usersrepository>`
+`</usersrepository>`  
 启用:  
 `<usersrepository name="LocalUsers" class="org.apache.james.user.jdbc.JamesUsersJdbcRepository" destinationURL="db://maildb/users">`
     `<sqlFile>file://conf/sqlResources.xml</sqlFile>`
