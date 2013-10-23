@@ -46,7 +46,9 @@ james-config
     `<enableForwarding>true</enableForwarding>`  
     `<enableVirtualHosting>true</enableVirtualHosting>`    
 `</usersrepository>`  
-
+### smtpserver-template.conf  
+启用`<authRequired>true</authRequired>`邮件服务器之外的机子通过该邮件服务器发邮件时必须验证密码，邮件服务器所在的程序发邮件给该邮件服务器时会忽略密码验证  
+修改`<helloName autodetect="false">findest.com.cn</helloName>`  
 
   
   
