@@ -15,7 +15,8 @@ james-config
   database.username=root  
   database.password=slothdb123  
   vendorAdapter.database=MYSQL  
-  注意：需要将对应的数据库驱动包拷贝到conf/lib/下，运行bin/run.bat将会自动建立起数据库表结构 
+  注意：需要将对应的数据库驱动包拷贝到conf/lib/下，如果报错找不到数据库驱动包时需要修改wrapper.conf文件：
+  `wrapper.java.classpath.120=../conf/lib/mysql-connector-java-5.0.8-bin.jar`添加这一行，运行bin/run.bat或bin/james.bat将会自动建立起数据库表结构 
 ### domainlist-template.conf 邮件服务器域名配置  
 `<domainlist class=org.apache.james.domainlist.xml.XMLDomainList>`  
 `<domainnames> `   
@@ -31,8 +32,7 @@ james-config
 `<server>61.177.7.1</server>`  
 `<server>...</server>`  
 `</servers>`  
-### wrapper.conf
-添加`wrapper.java.classpath.120=../conf/lib/mysql-connector-java-5.0.8-bin.jar`,记得将数据库驱动拷贝到conf/lib下
+
 
   
   
