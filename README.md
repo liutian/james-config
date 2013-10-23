@@ -34,18 +34,18 @@ james-config
 `</servers>`  
 ### usersrepository-template.conf 修改用户存储方式
 注释掉：  
-`<usersrepository name="LocalUsers" class="org.apache.james.user.jpa.JPAUsersRepository">`
-    `<algorithm>MD5</algorithm>`
-    `<enableVirtualHosting>false</enableVirtualHosting>`
-`</usersrepository>`  
+`<usersrepository name="LocalUsers" class="org.apache.james.user.jpa.JPAUsersRepository">`  
+    `<algorithm>MD5</algorithm>`  
+    `<enableVirtualHosting>false</enableVirtualHosting>`  
+`</usersrepository>`    
 启用:  
-`<usersrepository name="LocalUsers" class="org.apache.james.user.jdbc.JamesUsersJdbcRepository" destinationURL="db://maildb/users">`
-    `<sqlFile>file://conf/sqlResources.xml</sqlFile>`
-    `<ignoreCase>true</ignoreCase>`
-    `<enableAliases>true</enableAliases>`
-    `<enableForwarding>true</enableForwarding>`
-    `<enableVirtualHosting>true</enableVirtualHosting>`
-`</usersrepository>`
+`<usersrepository name="LocalUsers" class="org.apache.james.user.jdbc.JamesUsersJdbcRepository" destinationURL="db://maildb/users">`  
+    `<sqlFile>file://conf/sqlResources.xml</sqlFile>`  
+    `<ignoreCase>true</ignoreCase>`  
+    `<enableAliases>true</enableAliases>`  
+    `<enableForwarding>true</enableForwarding>`  
+    `<enableVirtualHosting>true</enableVirtualHosting>`    
+`</usersrepository>`  
 
 
   
